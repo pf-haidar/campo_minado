@@ -17,9 +17,9 @@ class CampoWidget extends StatelessWidget {
     int qtdeMinas = campo.qtdeMinasNaVizinhanca;
 
     if (campo.aberto && campo.minado && campo.explodido) {
-      return Image.asset('assets/images/aberto_0.jpeg');
+      return Image.asset('assets/images/bomba_0.jpeg');
     } else if (campo.aberto && campo.minado) {
-      return Image.asset('assets/images/aberto_0.jpeg');
+      return Image.asset('assets/images/bomba_1.jpeg');
     } else if (campo.aberto) {
       return Image.asset('assets/images/aberto_$qtdeMinas.jpeg');
     } else if(campo.marcado) {
